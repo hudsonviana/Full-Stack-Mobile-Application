@@ -1,0 +1,13 @@
+# Ignora arquivos de ambiente
+.env
+backend/.env
+
+# Ignora node_modules em qualquer subpasta
+node_modules/
+
+# Build output
+dist/
+
+# Cache de ferramentas
+.cache/
+
