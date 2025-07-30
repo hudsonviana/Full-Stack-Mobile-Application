@@ -47,7 +47,7 @@ initDB().then(() => {
 })
 
 // https://www.youtube.com/watch?v=vk13GJi4Vd0
-// Parei em 1:14:00
+// Parei em 1:23:00
 
 // https://console.neon.tech/app/projects/gentle-glitter-68092320/branches/br-silent-cloud-ac8jp7wu/tables?database=neondb
 

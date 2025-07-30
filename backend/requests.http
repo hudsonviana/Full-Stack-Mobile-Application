@@ -12,9 +12,9 @@ content-type: application/json
 
 {
   "user_id": "123",
-  "title": "salary",
+  "title": "salary 30",
   "category": "income", 
-  "amount": 900
+  "amount": 1200
 }
 
 ###
@@ -24,6 +24,6 @@ GET http://localhost:5001/api/transactions/summary/123
 
 ###
 
-DELETE http://localhost:5001/api/transactions/1
+DELETE http://localhost:5001/api/transactions/6
 
 
