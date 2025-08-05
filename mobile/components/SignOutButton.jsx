@@ -1,6 +1,9 @@
 import { useClerk } from '@clerk/clerk-expo'
 import { useRouter } from 'expo-router'
-import { Text, TouchableOpacity } from 'react-native'
+import { Alert, Text, TouchableOpacity } from 'react-native'
+import { styles } from '../assets/styles/home.styles'
+import { Ionicons } from '@expo/vector-icons'
+import { COLORS } from '../constants/colors'
 
 export const SignOutButton = () => {
   // Use `useClerk()` to access the `signOut()` function
@@ -8,20 +11,15 @@ export const SignOutButton = () => {
   const router = useRouter()
 
   const handleSignOut = async () => {
-    try {
-      await signOut()
-      // Redirect to your desired page
-      // router.replace('/sign-in')
-    } catch (err) {
-      // See https://clerk.com/docs/custom-flows/error-handling
-      // for more info on error handling
-      console.error(JSON.stringify(err, null, 2))
-    }
+    Alert.alert('Sair', 'Tem certeza que deseja fechar o app?', [
+      { text: 'Cancelar', style: 'cancel' },
+      { text: 'Fechar', style: 'destructive', onPress: signOut },
+    ])
   }
 
   return (
-    <TouchableOpacity onPress={handleSignOut}>
-      <Text>Sign out</Text>
+    <TouchableOpacity style={styles.logoutButton} onPress={handleSignOut}>
+      <Ionicons name="log-out-outline" size={20} color={COLORS.text} />
     </TouchableOpacity>
   )
 }
