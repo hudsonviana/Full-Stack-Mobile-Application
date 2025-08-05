@@ -2,7 +2,7 @@ GET http://localhost:5001/
 
 ###
 
-GET http://localhost:5001/api/transactions/123
+GET http://localhost:5001/api/transactions/user_30lFTQdVEE1PlaquuQopsqqGreF
 
 
 ###
@@ -19,7 +19,7 @@ content-type: application/json
 
 ###
 
-GET http://localhost:5001/api/transactions/summary/123
+GET http://localhost:5001/api/transactions/summary/user_30lFTQdVEE1PlaquuQopsqqGreF
 
 
 ###
