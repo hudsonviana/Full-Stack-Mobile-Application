@@ -1,6 +1,5 @@
 import { useClerk } from '@clerk/clerk-expo'
-import { useRouter } from 'expo-router'
-import { Alert, Text, TouchableOpacity } from 'react-native'
+import { Alert, TouchableOpacity } from 'react-native'
 import { styles } from '../assets/styles/home.styles'
 import { Ionicons } from '@expo/vector-icons'
 import { COLORS } from '../constants/colors'
@@ -8,7 +7,6 @@ import { COLORS } from '../constants/colors'
 export const SignOutButton = () => {
   // Use `useClerk()` to access the `signOut()` function
   const { signOut } = useClerk()
-  const router = useRouter()
 
   const handleSignOut = async () => {
     Alert.alert('Sair', 'Tem certeza que deseja fechar o app?', [
