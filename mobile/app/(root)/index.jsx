@@ -24,5 +24,5 @@ export default function Page() {
   )
 }
 
+// Parei em 2:44:00
 // https://www.youtube.com/watch?v=vk13GJi4Vd0
-// PAREI EM: 2:18:00
