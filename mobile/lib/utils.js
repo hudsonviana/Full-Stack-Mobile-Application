@@ -5,7 +5,7 @@ export function formatDate(dateString) {
   const date = new Date(dateString)
   return date.toLocaleDateString('pt-BR', {
     year: 'numeric',
-    month: 'long',
+    month: 'short',
     day: 'numeric',
   })
 }
